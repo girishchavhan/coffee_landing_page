@@ -1,0 +1,220 @@
+:root {
+
+    --primary-color: #3f181b;
+    --sec-color: #fb9818;
+    --third-color:#222323;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: "Poppins", sans-serif;
+      height: 100vh;
+      width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 40px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    
+}
+.logo img{
+    height: 45px;
+}
+.links{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 2rem;
+}
+.links a:hover{
+    background-color: var(--sec-color);
+    color: var(--primary-color);
+}
+section{
+    padding: 100px 200px;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: white;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left h1{
+    color: var(--sec-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+.left p{
+    color: rgb(156, 155, 155);
+}
+.right img{
+    height: 500px;
+}
+.hero-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    
+    
+}
+.hero-buttons button{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid var(--sec-color);
+    border-radius: 20px;
+    font-size: 1.2rem;
+   transition: all 0.3s;
+
+}
+#order{
+    background-color: var(--sec-color);
+    color: var(--primary-color);
+}
+#contact:hover{
+    background-color: var(--sec-color);
+     color: var(--primary-color);
+}
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+}
+.about-left{
+    flex-shrink: 0;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+.about-left img{
+    height: 100%;
+    
+}
+.about-right{
+    width:50% ;
+    text-align: center;
+
+}
+.heading{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+}
+.heading::before{
+    content: "";
+    position: absolute;
+    background-color: var(--sec-color);
+    height: 5px;
+    width: 40%;
+    bottom: 0;
+    border-radius: 2rem;
+}
+.icon{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.icon i:hover{
+    color: var(--sec-color);
+}
+#menu{
+    background-color: var(--third-color);
+    color: white;
+    padding: 50px 100px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.card{
+        width: 27%;
+        text-align: center;
+}
+.card img{
+    height: 60%;
+}
+#contact-us{
+    background-color: rgb(249, 212, 199);
+    
+}
+.cont{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.left-right{
+    display: flex;
+    gap: 150px;
+    margin-top: 90px;
+}
+.right form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right form input{
+    background-color:rgb(249, 212, 199) ;
+    border-radius: 5px;
+    padding: 15px;
+    
+}
+ input{
+width: 400px;
+}
+textarea{
+    background-color:rgb(249, 212, 199) ;
+    border-radius: 5px;
+    padding: 15px;
+}
+.right form input:hover{
+    border: 2px solid var(--sec-color);
+}
+textarea:hover{
+     border: 1px solid var(--sec-color);
+}
+.right form button{
+    width: 90px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: #3f181b;
+    color: white;
+    margin-top: 30px;
+    font-size: large;
+    
+}
