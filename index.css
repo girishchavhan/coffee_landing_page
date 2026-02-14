@@ -228,7 +228,7 @@ textarea:hover{
 }
 
 
-@media (max-width: 728px) {
+@media (max-width: 1148px) {
     .mobile-notice {
         display: flex;
     }
