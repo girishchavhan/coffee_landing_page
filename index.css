@@ -218,3 +218,21 @@ textarea:hover{
     font-size: large;
     
 }
+.mobile-notice {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+
+@media (max-width: 728px) {
+    .mobile-notice {
+        display: flex;
+    }
+    .main {
+        display: none;
+    }
+}
